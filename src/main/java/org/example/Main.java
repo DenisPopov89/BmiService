@@ -1,9 +1,10 @@
 package org.example;
 public class Main {
     public static void main(String[] args) {
-        BonusMilesService service = new BonusMilesService();
-        int price = 89;
-        int miles = service.calculate(price);
-        System.out.println(miles);
+        BmiService service = new BmiService();
+        double weight = 60;
+        double index = service.calculate(weight);
+        System.out.println("Индекс массы тела:");
+        System.out.println((int) index);
     }
 }
