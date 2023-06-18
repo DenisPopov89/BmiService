@@ -1,7 +1,8 @@
 package org.example;
 public class BmiService {
-    public double calculate (double parameters) {
-        double bmiServiceIndex = parameters / Math.pow (1.7, 2);
-        return bmiServiceIndex;
+    public int index(int weight, double height) {
+        int total;
+        total = (int) (weight / Math.pow(height, 2));
+        return total;
     }
 }
